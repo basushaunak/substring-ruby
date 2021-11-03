@@ -11,15 +11,11 @@ def substring(in_phrase,in_word_list)
                 if found.dig(word) == nil # New word
                     found[word] = 1
                 else
-                    found[word]= found[word] + 1 #Existing word
+                    found[word]= found[word] + 1 #Existing word - increment
                 end
             end
         end
     end
     return found
 end
-ph = "These are the quick and brown quickly foxes. and foxens who whose jump over lazy dogs. Yes sire the oxens are pretty lazy"
-dct = ["ouch", "the", "fox", "ox", "oxes", "az"]
-puts "Phrase: #{ph} "
-puts "Dictionary: #{dct}"
-puts substring(ph,dct)
+
